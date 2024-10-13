@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOGO Product Offer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="product-offer">
+        <h1>YAY! It's BOGO</h1>
+        <form id="bogoForm">
+            <div class="option">
+                <div class="flex-container">
+                    <input type="radio" id="oneUnit" name="unit" value="1" checked>
+                    <label for="oneUnit">
+                        <div class="unit-info">
+                            <div class="left-section">
+                                <span class="unit-title">1 Unit</span>
+                                <span class="discount-tag">10% Off</span>
+                                <br />
+                                <span class="description">Standard Price</span>
+                            </div>
+                            <div class="right-section">
+                                <span class="price">$10.00 USD</span>
+                                <br />
+                                <span class="original-price">$24.00 USD</span>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            
+            <div class="option most-popular">
+                <div class="flex-container">
+                    <input type="radio" id="twoUnit" name="unit" value="2">
+                    <label for="twoUnit">
+                        <div class="unit-info">
+                            <div class="left-section">
+                                <span class="unit-title">2 Unit</span>
+                                <span class="discount-tag">20% Off</span>
+                            </div>
+                            <div class="right-section">
+                                <span class="price">$18.00 USD</span>
+                                <br />
+                                <span class="original-price">$24.00 USD</span>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            
+                <!-- Corrected Size and Color layout -->
+                <div class="dropdown-section">
+                    <div class="select-header">
+                        <span>Size</span>
+                        <span>Color</span>
+                    </div>
+                    <div class="select-pair">
+                        <label>#1</label>
+                        <select id="size1">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                        <select id="color1">
+                            <option value="Black">Black</option>
+                            <option value="White">White</option>
+                        </select>
+                    </div>
+                    <div class="select-pair">
+                        <label>#2</label>
+                        <select id="size2">
+                            <option value="S">S</option>
+                            <option value="M">M</option>
+                            <option value="L">L</option>
+                        </select>
+                        <select id="color2">
+                            <option value="Colour">Colour</option>
+                            <option value="White">White</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="option">
+                <div class="flex-container">
+                    <input type="radio" id="threeUnit" name="unit" value="3">
+                    <label for="threeUnit">
+                        <div class="unit-info">
+                            <div class="left-section">
+                                <span class="unit-title">3 Unit<span class="discount-power">30% Off</span></span>
+                            </div>
+                            <div class="right-section">
+                                <span class="price">$24.00 USD</span>
+                                <br />
+                                <span class="original-price">$24.00 USD</span>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <div class="delivery">
+                <p class="delivery-one">Free Delivery</p>
+                <div class="total">
+                    <p>Total: <span id="totalPrice">$18.00 USD</span></p>
+                </div>
+            </div>
+
+
+            <button type="button" id="addToCart">+ Add to Cart</button>
+        </form>
+    </section>
+
+    <script src="function.js"></script>
+</body>
+</html>
+
+
+
+
+
